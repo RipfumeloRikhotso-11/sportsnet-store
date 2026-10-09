@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+
+# Build output
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages (restore with: nuget restore)
+packages/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local databases / secrets
+*.mdf
+*.ldf
+.env

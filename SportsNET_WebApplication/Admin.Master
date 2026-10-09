@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="SportsNET_WebApplication.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>SportsNET Admin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        .admin-navbar{
+            background-color: #A8D38D;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .admin-nav-links a{
+            color: #000000;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .admin-nav-links a:hover{
+            color: #d1e2ff;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="admin-navbar">
+            <a href="AdminHome.aspx" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><span style="color:#AEDCAE;" class="font-weight-bold">Sports</span>NET</h1>
+            </a>
+            <nav class="admin-nav-links">
+                <a href="Inventory.aspx">INVENTORY</a>
+                <a href="OrderManagement.aspx">ORDER MANAGEMENT</a>
+                <a href="Report.aspx">REPORTS</a>
+                <a href="AddProduct.aspx">ADD PRODUCT</a>
+                <a href="Logout.aspx">LOG OUT</a>
+            </nav>
+        </header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer style="background-color:#A8D38D; color:black;">
+         <div class="container-fluid grey text-dark mt-5 pt-5">
+        <div class="row px-xl-5 pt-5">
+            <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+                <a href="" class="text-decoration-none">
+                    <h1 class="mb-4 display-5 font-weight-semi-bold"><span style="color:black;" class="font-weight-bold">Sports</span>NET</h1>
+                </a>
+                <p>Put business model here</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt mr-3 text-light"></i>123 Street, New York, USA</p>
+       
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Need Help?</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-dark mb-2" href="HelpAndSupport.aspx"><i class="fa fa-angle-right mr-2"></i>Help and Support</a>
+                            <a class="text-dark mb-2" href="ExchangePolicy.aspx"><i class="fa fa-angle-right mr-2"></i>Exchange Policy</a>
+                            <a class="text-dark mb-2" href="SizeGuidelines.aspx"><i class="fa fa-angle-right mr-2"></i>Size Guidelines</a>
+                            <a class="text-dark mb-2" href="FAQ.aspx"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+                            <a class="text-dark mb-2" href="ContactAndDelivery.aspx"><i class="fa fa-angle-right mr-2"></i>Contact and Delivery Details</a>
+                            <a class="text-dark" href="TermsAndConditions.aspx"><i class="fa fa-angle-right mr-2"></i>Terms and Conditions</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">Contact Us</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <p class="mb-2"><i class="fa fa-envelope mr-3 text-light"></i>sportsNet@business.co.za</p>
+                             <p class="mb-0"><i class="fa fa-phone-alt mr-3 text-light" ></i>+27 83 991 0287</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-5">
+                        <h5 class="font-weight-bold text-dark mb-4">See Our Socials</h5>
+
+                        <div class="col-lg-6 text-center text-lg-right">
+                         <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f text-light"></i>
+                       
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter text-light"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in text-light"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram text-light"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube text-light"></i>
+                    </a>
+                </div>
+            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+                <p class="mb-md-0 text-center text-md-left text-dark">
+                    &copy; <a class="text-dark font-weight-semi-bold" href="#">SportsNET</a>. All Rights Reserved. Designed
+                    by
+                    <a class="text-dark font-weight-semi-bold" href="https://htmlcodex.com">HTML Codex</a><br>
+                    Distributed By <a href="https://themewagon.com" target="_blank" style="color:#AEDCAE">ThemeWagon</a>
+                </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+                <img class="img-fluid" src="img/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    </footer>
+
+
+     <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </form>
+</body>
+</html>
