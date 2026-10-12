@@ -17,5 +17,9 @@ A group project: an online sports-store built with ASP.NET Web Forms and a WCF s
 4. Update the connection string in `Sportsnet_Service/Web.config` if you are not using LocalDB.
 
 ## Authors
+- RC Rikhotso
+- N Mosima
+- M Mokoena
+- MC Ramaliba
 
-Add your group members here.
+
